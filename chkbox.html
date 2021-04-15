@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		fieldset {
+			width: 400px;
+			padding: 20px;
+			margin: 20px;
+		}
+
+		input[type=checkbox] {
+			width: 24px;
+			height: 24px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script/script.js"></script>
+</head>
+
+<body>
+	<h1>체크박스 유효성 검사</h1>
+
+	<fieldset>
+		<legend>체크박스 검사</legend>
+
+		<input type="checkbox" id="chkAgree">
+		<!-- checked는 checked="true"와 동일하며 결과화면에서 체크박스가
+			  체크된 상태로 나타남.
+		  	  단, checked="false" 기능은 존재하지 않으며 checked 속성을 지우면 결과화면에서 체크상태가 해제된다.
+		  -->
+
+		필수체크사항입니다.
+
+		<button type="button">확인</button>
+		<br><br>
+		<span id="res"></span>
+
+	</fieldset>
+</body>
+
+</html>
